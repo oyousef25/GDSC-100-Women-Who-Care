@@ -89,7 +89,7 @@ section {
   color: #6b96be;
 }
 .about .image {
-  background: url("../img/me.jpg") center center no-repeat;
+  background: url("../assets/img/me.jpg") center center no-repeat;
   background-size: cover;
   min-height: 400px;
      width: 30vw;
