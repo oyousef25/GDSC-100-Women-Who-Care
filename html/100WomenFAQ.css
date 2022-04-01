@@ -194,7 +194,7 @@ table a:hover{
 
 .question{
     cursor: pointer;
-    font-family: 'Concert One', cursive;
+    font-family: Montserrat, sans-serif;
     font-size: 20px;
     color: white;
     background-color: #dfabbc;
@@ -206,7 +206,7 @@ table a:hover{
 }
 
 .answer{
-    font-family: 'Comic Neue', cursive;
+    font-family: Montserrat, sans-serif;
     display: none;
     line-height: 25px;
     font-size: 17px;
