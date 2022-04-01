@@ -1,75 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<title>Events</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
-<link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossOrigin="anonymous"/>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossOrigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossOrigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossOrigin="anonymous"></script>
-        <div id="fb-root"></div>
+<head>
+    <title>100 Women Who Care</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+    <style>
+        .col1{
+            margin-left: 5%;
+            width: 40%;
+            float: left;
+        }
+        .fb-page{
+            margin-right: 5%;
+            /* float: right; */
+            /* vertical-align: middle; */
+        }
 
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v13.0"
-        nonce="vuIKT6TB"></script>
-<style>
-    .web-page{
-        margin: 50px;
-    }
+        a:link{
+            /* this gets rid of purple underline for links */
+            text-decoration: none!important;
+            cursor: pointer;
+            /* color: salmon; */
+        }
 
-    .page-title{
-        text-align: center;
-    }
+        a, a:hover{
+            /* this doesn't show up after applying the link and text-decoration:none */
+            color: #e91e63;
+        }
+    </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-    .col1{
-        margin-left: 5%;
-        width: 40%;
-        float: left;
-    }
-    .fb-page{
-        margin-right: 5%;
-        /* float: right; */
-        /* vertical-align: middle; */
-    }
-
-    a:link{
-        /* this gets rid of purple underline for links */
-        text-decoration: none!important;
-        cursor: pointer;
-        /* color: salmon; */
-    }
-
-    a, a:hover{
-        /* this doesn't show up after applying the link and text-decoration:none */
-        color: salmon;
-    }
-
-
-
-</style>
-<script src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous">
-    $(function(){
-        $("#header").load("header.html");
-        $("#footer").load("footer.html");
-    });
-</script>
-<body>
-<div class="web-page">
-<div id="header"></div>
-    <div class="page-title">
-        <h1>Upcoming Events</h1>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="150px" height="30px"/></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="howItWorks.html">HOW IT WORKS</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
     </div>
+</nav>
+
+<div class="jumbotron text-center">
+    <h1><h1>Upcoming Events</h1>
+</div>
+<div class="web-page">
     <br>
     <br>
     <div class="container col1">
@@ -83,15 +77,68 @@
         </div>
     </div>
     <div class="container col2">
-            <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Meta</a></blockquote></div>
-            <!-- <br>
-            <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Meta</a></blockquote></div> -->
+        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Meta</a></blockquote></div>
         <br>
         <br>
         <br>
-        <br>  
+        <br>
     </div>
 </div>
-<div id="footer"></div>
+<footer class="container-fluid text-center">
+    <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p>100 Women Who Care © 2022 All Rights Reserved</p>
+
+    <div class="technologies-footer">
+        <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook.png">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="images/instagram.png">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png">
+        </a>
+    </div>
+</footer>
+
+<script>
+    $(document).ready(function () {
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+
+        $(window).scroll(function () {
+            $(".slideanim").each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+    })
+</script>
+
 </body>
 </html>
