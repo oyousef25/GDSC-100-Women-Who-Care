@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4633f741-d4f5-4d2b-9201-822d94275d2a" name="scweb" url="http://oyousef.scweb.ca">
+        <fileTransfer rootFolder="/home/oyousef" accessType="SFTP" host="php.scweb.ca" port="22" sshConfigId="1c92d74a-68ef-4fed-87e4-bd3dde46201a" sshConfig="oyousef@php.scweb.ca:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
