@@ -11,32 +11,42 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css"/>
     <style>
-        .col1{
+        .col1 {
             margin-left: 5%;
             width: 40%;
             float: left;
         }
-        .fb-page{
+
+        .fb-page {
             margin-right: 5%;
             /* float: right; */
             /* vertical-align: middle; */
         }
 
-        a:link{
+        a:link {
             /* this gets rid of purple underline for links */
-            text-decoration: none!important;
+            text-decoration: none !important;
             cursor: pointer;
             /* color: salmon; */
         }
 
-        a, a:hover{
+        a, a:hover {
             /* this doesn't show up after applying the link and text-decoration:none */
             color: #e91e63;
+        }
+
+        .container{
+            margin-bottom: 10px;
+        }
+
+        .fb{
+            text-align: center;
         }
     </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" nonce="U0oTl8tj"></script>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -50,7 +60,6 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="howItWorks.html">HOW IT WORKS</a></li>
                 <li><a href="events.html">EVENTS</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
@@ -63,24 +72,20 @@
     <h1><h1>Upcoming Events</h1>
 </div>
 <div class="web-page">
-    <br>
-    <br>
-    <div class="container col1">
-        <div class="blurb-text">
-            <h2>Make sure you follow our Facebook page where all of our events are being posted:</h2>
-            <h3><a href = "https://www.google.com/">100 Women Who Care Windsor - Events.</a></h3>
-            <br>
-            <br>
-            <h2>Make sure you also follow our general Facebook page to keep up with the updates:</h2>
-            <h3><a href = "https://www.google.com/">100 Women Who Care Windsor - Events.</a></h3>
+    <div class="row align-items-center">
+        <div class="container col-sm-6">
+            <div class="blurb-text">
+                <h2>Make sure you follow our Facebook page where all of our events are being posted:</h2>
+                <h3><a href="https://www.google.com/">100 Women Who Care Windsor - Events.</a></h3>
+                <br>
+                <br>
+                <h2>Make sure you also follow our general Facebook page to keep up with the updates:</h2>
+                <h3><a href="https://www.google.com/">100 Women Who Care Windsor - Events.</a></h3>
+            </div>
         </div>
-    </div>
-    <div class="container col2">
-        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Meta</a></blockquote></div>
-        <br>
-        <br>
-        <br>
-        <br>
+        <div class="fb container col-sm-6">
+            <div class="fb-page center-block" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Meta</a></blockquote></div>
+        </div>
     </div>
 </div>
 <footer class="container-fluid text-center">
